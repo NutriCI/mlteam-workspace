@@ -17,17 +17,24 @@ def predict():
     data = request.get_json()
 
     # Validate input
-    if "calories" not in data or not isinstance(data['calories'], list):
-        return jsonify({'error': "Input must contain a list with 7 numbers."}), 400
+    required_keys = ['calories', 'sugar', 'fat', 'salt']
+    for key in required_keys:
+        if key not in data or not isinstance(data[key], list):
+            return jsonify({'error': f"Input must contain a list with 7 numbers for {key}."}), 400
     
     try:
-        # Make sure input has length of 7
-        input_data = np.array(data['calories'])
-        if len(input_data) != 7:
-            return jsonify({'error': "Input must be a list of length 7."}), 400
-
-        # Reshape data into (1, 7, 1) -> (batch_size, timesteps, features)
-        input_data = input_data.reshape((1, 7, 1))
+        # Make sure each input has length of 7
+        input_data = []
+        for key in required_keys:
+            if len(data[key]) != 7:
+                return jsonify({'error': f"Input for {key} must be a list of length 7."}), 400
+            input_data.append(data[key])
+        
+        # Convert to numpy array and reshape
+        input_data = np.array(input_data).T.reshape((1, 7, 4))  # (batch_size, timesteps, features)
+        
+        # Select only the 'calories' feature for prediction
+        input_data = input_data[:, :, 0].reshape((1, 7, 1))  # (batch_size, timesteps, 1)
         
         # Predict
         prediction = model.predict(input_data)
