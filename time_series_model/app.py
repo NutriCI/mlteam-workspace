@@ -41,7 +41,7 @@ def predict():
 
         # Format prediction result into JSON
         response = {
-            'predicted_calories': float(prediction[0][0])
+            'predicted_calories': int(prediction[0][0])
         }
         return jsonify(response)
 
