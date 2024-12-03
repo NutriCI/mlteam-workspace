@@ -63,7 +63,9 @@ def text_list(table_image, table_words_bbox, ocr_model):
         x, y, w, h = row['x'], row['y'], row['w'], row['h']
         roi = gray[y:y + h, x:x + w]
         thresh = cv2.threshold(roi, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
-
+        if thresh is None:
+            continue
+        
         contours = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         contours = imutils.grab_contours(contours)
         contours = sorted(contours, key=lambda c: cv2.boundingRect(c)[0])
@@ -86,7 +88,7 @@ def text_list(table_image, table_words_bbox, ocr_model):
             padded = padded.astype('float32') / 255.0
             padded = np.expand_dims(padded, axis=-1)
 
-            pred = ocr_model.predict(np.expand_dims(padded, axis=0))
+            pred = ocr_model.predict(np.expand_dims(padded, axis=0), verbose=0)
             label_idx = np.argmax(pred)
             label = labels[label_idx]
 

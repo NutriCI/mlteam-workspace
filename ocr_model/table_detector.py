@@ -17,9 +17,9 @@ def load_image_into_numpy_array(image_path):
     (im_width, im_height) = image.size
     return np.array(image).reshape((im_height, im_width, 3)).astype(np.uint8)
 
-def get_table(image_path, detection_model):
-    image_np = load_image_into_numpy_array(image_path)
-    image_resized = tf.image.resize(image_np, (640, 640))
+def get_table(image_array, detection_model):
+    # image_np = load_image_into_numpy_array(image_path)
+    image_resized = tf.image.resize(image_array, (640, 640))
     input_tensor = tf.convert_to_tensor(image_resized[tf.newaxis, ...], dtype=tf.float32)
     detections = detection_model(input_tensor)
     
@@ -27,13 +27,13 @@ def get_table(image_path, detection_model):
     max_box = detections['detection_boxes'][0].numpy()[max_score_idx]
     
     ymin, xmin, ymax, xmax = max_box
-    height, width, _ = image_np.shape
+    height, width, _ = image_array.shape
     
     ymin = int(ymin * height)
     xmin = int(xmin * width)
     ymax = int(ymax * height)
     xmax = int(xmax * width)
     
-    table = image_np[ymin:ymax, xmin:xmax]
+    table = image_array[ymin:ymax, xmin:xmax]
     
     return table
