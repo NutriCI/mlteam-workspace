@@ -1,0 +1,22 @@
+{
+    "calories": {
+        "unit": "g",
+        "value": 0.5
+    },
+    "fat": {
+        "unit": "g",
+        "value": 0.1
+    },
+    "protein": {
+        "unit": "g",
+        "value": 0.5
+    },
+    "salt": {
+        "unit": "g",
+        "value": 0.08
+    },
+    "sugar": {
+        "unit": "g",
+        "value": 0.5
+    }
+}

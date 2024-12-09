@@ -1,0 +1,22 @@
+{
+    "calories": {
+        "unit": "kj",
+        "value": 707.0
+    },
+    "fat": {
+        "unit": "g",
+        "value": 123.0
+    },
+    "protein": {
+        "unit": "g",
+        "value": 10.2
+    },
+    "salt": {
+        "unit": "mg",
+        "value": 605.0
+    },
+    "sugar": {
+        "unit": "g",
+        "value": 4.0
+    }
+}

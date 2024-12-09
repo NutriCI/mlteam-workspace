@@ -1,0 +1,22 @@
+{
+    "calories": {
+        "unit": "kkal",
+        "value": 120.0
+    },
+    "fat": {
+        "unit": "kkal",
+        "value": 50.0
+    },
+    "protein": {
+        "unit": "g",
+        "value": 2.0
+    },
+    "salt": {
+        "unit": "mg",
+        "value": 150.0
+    },
+    "sugar": {
+        "unit": "mg",
+        "value": 150.0
+    }
+}
