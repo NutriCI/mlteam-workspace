@@ -1,1 +1,0 @@
-https://github.com/Xinihiko/Simple-OCR/tree/master
