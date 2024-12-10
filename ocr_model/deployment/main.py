@@ -38,7 +38,6 @@ nutrition_synonyms = {
     "salt": ["sodium", "salt", "salts", "natrium","garam"],
     "fat": ["fat", "fats", "fat", "saturate" ,"lemak","saturates",'lemak jenuh'],
     "sugar": ["sugar","sugars","gula"],
-    "protein": ["protein"]  
 }
 
 valid_units = ["g", "mg", "kkal", "kJ"]
@@ -47,7 +46,6 @@ default_nutrition_units = {
     "salt": 'mg',
     "fat": 'g',
     "sugar": 'g',
-    "protein": 'g'
 }
 
 units_regex = "|".join(valid_units)
@@ -57,7 +55,7 @@ spelling_corrector = SpellingCorrector(BIG_TEXT_FILE_PATH)
 
 
 # uncomment this code below if you want to use table detector
-# table_detector_model = table_detector.get_model(TABLE_DETECTOR_MODEL_PATH)
+table_detector_model = table_detector.get_model(TABLE_DETECTOR_MODEL_PATH)
 
 text_detector = TextDetector(TEXT_DETECTOR_MODEL_PATH)
 ocr_model = ocr.get_model(OCR_MODEL_PATH)
@@ -83,7 +81,7 @@ def upload_image():
         table_detection_time = 0
 
         # # uncomment this line code below if you want to use table detector
-        # image_array, table_detection_time = detect_table(image_array, table_detector_model)
+        image_array, table_detection_time = detect_table(image_array, table_detector_model)
 
         detected_text_df, text_detection_time = detect_text(image_array)
         text_list, ocr_detection_time = perform_ocr(image_array, detected_text_df)
@@ -166,10 +164,10 @@ def extract_nutrition_data(separated_text_list):
             unit = match.group(2) if match.group(2) else None
             nutrition_data[nutrient] = {
                 "value": float(value),
-                "unit": unit.strip() if unit else default_nutrition_units[nutrient]
+                "unit": unit.strip() if unit and nutrient != 'calories' else default_nutrition_units[nutrient]
             }
         else:
-            nutrition_data[nutrient] = {"value": None, "unit": None}  # Default if not found
+            nutrition_data[nutrient] = {"value": 0.0, "unit": default_nutrition_units[nutrient]}  # Default if not found
     end_time = time.time()
     return nutrition_data, end_time - start_time
 
