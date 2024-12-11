@@ -52,6 +52,7 @@ This dataset was used to train the nutrition table object detection model runnin
 Images were collected from the Open Food Facts database and labeled manually.
 Just like the [original images](https://world.openfoodfacts.org/data), the images in this dataset are licensed under the Creative Commons Attribution Share Alike license (CC-BY-SA 3.0).
 
+[Dataset Link from Hugging Face](https://huggingface.co/datasets/openfoodfacts/nutrition-table-detection)
 
 ## Fields
 

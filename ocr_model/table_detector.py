@@ -36,4 +36,4 @@ def get_table(image_path, detection_model):
     
     table = image_np[ymin:ymax, xmin:xmax]
     
-    return table
+    return table, (xmin, ymin, xmax, ymax)

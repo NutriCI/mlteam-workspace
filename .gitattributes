@@ -1,0 +1,1 @@
+ocr_model/deployment/assets/model/* filter=lfs diff=lfs merge=lfs -text
