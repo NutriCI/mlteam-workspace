@@ -1,7 +1,0 @@
-image_id,table_bbox,category_name
-0,"[array([0.05709876, 0.01427469, 0.60350156, 0.99112654], dtype=float32)]",['nutrition-table']
-1,"[array([0.15196079, 0.14705883, 0.5882353 , 0.5163399 ], dtype=float32)]",['nutrition-table']
-2,"[array([0.00833333, 0.01011561, 0.99444443, 0.9783237 ], dtype=float32)]",['nutrition-table']
-3,"[array([0.17181559, 0.3201923 , 0.625     , 0.6278846 ], dtype=float32)]",['nutrition-table']
-4,"[array([0.25124797, 0.14320119, 0.46832615, 0.37657744], dtype=float32)]",['nutrition-table']
-5,"[array([0.00937734, 0.00358531, 0.84208554, 0.98955804], dtype=float32)]",['nutrition-table']
