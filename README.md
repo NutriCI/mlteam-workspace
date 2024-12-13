@@ -30,7 +30,6 @@ This repository contains two main features:
 
 ```bash
 $ git clone https://github.com/NutriCI/mlteam-workspace.git
-$ cd mlteam-workspace
 ```
 
 ### Install Dependencies
