@@ -1,8 +1,8 @@
 ## Team Machine Learning
 </br>
 <p align="center">
-  <a href="https://www.tensorflow.org/" target="blank"><img src="https://www.tensorflow.org/images/tf_logo_social.png" width="120" alt="TensorFlow Logo" /></a>
-  <a href="https://pytorch.org/" target="blank"><img src="https://pytorch.org/assets/images/logo.svg" width="120" alt="PyTorch Logo" /></a>
+  <a href="https://www.tensorflow.org/" target="blank"><img src="https://www.tensorflow.org/images/tf_logo_social.png" width="240" alt="TensorFlow Logo" /></a>
+  <a href="https://pytorch.org/" target="blank"><img src="https://pytorch.org/assets/images/logo.svg" width="240" alt="PyTorch Logo" /></a>
 </p>
 
 ## Machine Learning Models Overview
