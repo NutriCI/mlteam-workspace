@@ -17,9 +17,6 @@ This repository contains two main features:
    - **Text Detection**: Uses EAST (Efficient and Accurate Scene Text) with MobileNet as the backbone.
    - **Text Recognition**: Implements CRNN (Convolutional Recurrent Neural Network) with MobileNet using the docTR library (PyTorch).
 
-<p align="center">
-  <a href="#" target="blank"><img src="https://res.cloudinary.com/dwm0tvqar/image/upload/v1734004301/project%20architecture.png" alt="Project Architecture" /></a>
-</p>
 
 ## Project Setup
 
