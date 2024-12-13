@@ -88,3 +88,4 @@ Run the OCR pipeline:
 $ cd mlteam-workspace/ocr_model/deployment
 $ python main.py
 ```
+*Note: Currently, in the OCR pipeline, we have removed the table detection step to reduce prediction time
