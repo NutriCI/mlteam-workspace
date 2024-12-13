@@ -28,9 +28,11 @@ $ cd mlteam-workspace
 ```
 
 ### Install Dependencies
+Install the latest Anaconda or Miniconda first. Run command bellow only on Windows OS
 
 ```bash
-$ pip install -r requirements.txt
+$ cd mlteam-workspace/ocr_model/deployment
+$ conda env create --file environment.yml
 ```
 
 ### Set Up Environment
