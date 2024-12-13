@@ -35,22 +35,6 @@ $ cd mlteam-workspace/ocr_model/deployment
 $ conda env create --file environment.yml
 ```
 
-### Set Up Environment
-
-Ensure the following environment variables are properly configured:
-
-- `DATA_PATH`: Path to the dataset.
-- `MODEL_SAVE_PATH`: Path to save trained models.
-- `OCR_CONFIG`: Configuration file path for OCR models.
-
-Create a `.env` file in the root directory:
-
-```env
-DATA_PATH=path/to/data
-MODEL_SAVE_PATH=path/to/save/models
-OCR_CONFIG=config/ocr_config.yaml
-```
-
 ### Time Series Model Setup
 
 Train the LSTM model:
