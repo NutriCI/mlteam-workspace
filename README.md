@@ -5,7 +5,7 @@
   <a href="https://pytorch.org/" target="blank"><img src="https://pytorch.org/assets/images/logo.svg" width="360" alt="PyTorch Logo" /></a>
 </p>
 
-## Meet the Engineers!!!🧑‍💻
+## 🧑‍💻Meet the Engineers🧑‍💻
 
 - Hasta Suci Purbaningsih - M254B4KX1747 ([@hastasuci](https://github.com/hastasuci))
 - Azhar Anas - M254B4KY0760 ([@DyoSch](https://github.com/DyoSch))
