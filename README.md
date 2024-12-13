@@ -57,50 +57,21 @@ $ python app.py
 Train the EAST MobileNet model:
 
 ```bash
-$ python ocr/text_detection/train.py
+$ cd mlteam-workspace/ocr_model/1_text_detection
+$ code .
 ```
 
 #### Text Recognition
 Fine-tune the CRNN MobileNet model with docTR:
 
 ```bash
-$ python ocr/text_recognition/train.py
+$ cd mlteam-workspace/ocr_model/2_ocr
+$ code .
 ```
 
 Run the OCR pipeline:
 
 ```bash
-$ python ocr/run_ocr.py
-```
-
-## Compile and Run the Project
-
-### Development
-
-```bash
+$ cd mlteam-workspace/ocr_model/deployment
 $ python main.py
-```
-
-### Production Mode
-
-Deploy the models and application using a preferred platform, such as Google Cloud or AWS.
-
-## Run Tests
-
-### Unit Tests
-
-```bash
-$ pytest tests/unit
-```
-
-### Integration Tests
-
-```bash
-$ pytest tests/integration
-```
-
-### Test Coverage
-
-```bash
-$ pytest --cov=.
 ```
