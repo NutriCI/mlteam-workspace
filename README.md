@@ -5,6 +5,12 @@
   <a href="https://pytorch.org/" target="blank"><img src="https://pytorch.org/assets/images/logo.svg" width="360" alt="PyTorch Logo" /></a>
 </p>
 
+## Meet the Engineers!!!🧑‍💻
+
+- Azhar Anas - M254B4KY0760 ([@DyoSch](https://github.com/DyoSch))
+- Farras Rafi’ Permana - M010B4KY1421  ([@frrp16](https://github.com/frrp16))
+- Hasta Suci Purbaningsih - M254B4KX1747 ([@hastasuci](https://github.com/hastasuci))
+
 ## Machine Learning Models Overview
 
 This repository contains two main features:
