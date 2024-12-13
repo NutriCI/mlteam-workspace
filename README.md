@@ -75,7 +75,7 @@ $ code .
 ```
 
 #### Text Recognition
-Fine-tune the CRNN MobileNet model with docTR:
+Fine-tune the CRNN MobileNet model with docTR PyTorch:
 
 ```bash
 $ cd mlteam-workspace/ocr_model/2_ocr
