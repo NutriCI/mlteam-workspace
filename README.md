@@ -33,7 +33,7 @@ $ git clone https://github.com/NutriCI/mlteam-workspace.git
 ```
 
 ### Install Dependencies
-Install the latest Anaconda or Miniconda first. Run command bellow only on Windows OS
+Install the latest [Anaconda](https://www.anaconda.com/download) or [Miniconda](https://docs.anaconda.com/miniconda/install/) first. Run command bellow only on Windows OS
 
 ```bash
 $ cd mlteam-workspace/ocr_model/deployment
