@@ -40,13 +40,15 @@ $ conda env create --file environment.yml
 Train the LSTM model:
 
 ```bash
-$ python time_series/train.py
+$ cd mlteam-workspace/time_series_model/analysis
+$ code .
 ```
 
 Run predictions:
 
 ```bash
-$ python time_series/predict.py
+$ cd mlteam-workspace/time_series_model
+$ python app.py
 ```
 
 ### OCR Model Setup
