@@ -1,4 +1,4 @@
-## Team Machine Learning
+## Machine Learning Team
 </br>
 <p align="center">
   <a href="https://www.tensorflow.org/" target="blank"><img src="https://www.tensorflow.org/images/tf_logo_social.png" width="360" alt="TensorFlow Logo" /></a>
