@@ -53,6 +53,14 @@ $ python app.py
 
 ### OCR Model Setup
 
+#### Table Detection (Opsional)
+Train the SSD Resnet50 FPN model:
+
+```bash
+$ cd mlteam-workspace/ocr_model/table_detection
+$ code .
+```
+
 #### Text Detection
 Train the EAST MobileNet model:
 
