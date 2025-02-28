@@ -8,7 +8,7 @@
 ## 🧑‍💻Meet the Engineers👩‍💻
 
 - Hasta Suci Purbaningsih - M254B4KX1747 ([@hastasuci](https://github.com/hastasuci))
-- Azhar Anas - M254B4KY0760 ([@DyoSch](https://github.com/DyoSch))
+- Azhar Anas - M254B4KY0760 ([@azhar-anas](https://github.com/azhar-anas))
 - Farras Rafi’ Permana - M010B4KY1421  ([@frrp16](https://github.com/frrp16))
 
 ## Machine Learning Models Overview
